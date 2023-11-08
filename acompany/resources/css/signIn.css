@@ -1,8 +1,0 @@
-/* Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-div button {
-    background-color: #006FFD;
-}
