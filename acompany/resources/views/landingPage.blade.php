@@ -16,7 +16,7 @@
 
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="{{ asset('css/signIn.css') }}"> -->
-    @vite('resources/css/app.css')
+    @vite('resources/css/css/landingPage.css')
 </head>
 
 <body style="font-family: 'Maven Pro';">
@@ -111,11 +111,26 @@
         </div>
 
         <div class="flex flex-col ml-64 p-4">
-            <h1 class="text-2xl font-bold mb-4">Halo</h1>
-            <p>
-                Ini adalah konten utama Anda. Anda dapat menambahkan elemen-elemen HTML dan konten lainnya di sini.
-            </p>
-            
+            <div class="card">
+                <div class="content10">
+                    <div class="text34">
+                        <div class="text39">Total Product</div>
+                    </div>
+                </div>
+                <div class="content11">
+                    <div class="text">
+                        <div class="text41">721K</div>
+                    </div>
+                    <div class="icontext11">
+                        <div class="text">
+                            <div class="text43">+11.01%</div>
+                        </div>
+                        <div class="iconset18">
+                            <img class="dot-icon" alt="" src="./public/arrowrise1.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

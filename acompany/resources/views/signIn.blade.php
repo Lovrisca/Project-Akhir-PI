@@ -16,7 +16,7 @@
 
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="{{ asset('css/signIn.css') }}"> -->
-    @vite('resources/css/app.css')
+    @vite('resources/css/css/signIn.css')
 </head>
 
 <body style="font-family: 'Maven Pro';">
