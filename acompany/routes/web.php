@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/l', function () {
     return view('landingPage');
 });
+Route::get('/c', function () {
+    return view('customer');
+});
