@@ -17,6 +17,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/landingPage.css') }}">
     @vite('resources/css/css/landingPage.css')
+
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
 </head>
 
 <body style="font-family: 'Maven Pro';">
@@ -24,7 +28,7 @@
     @extends('component/sideBar')
 
     <div class="flex flex-col ml-64 p-4">
-        <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
             <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Product</p>
@@ -79,6 +83,140 @@
             </div>
         </div>
     </div>
+
+    <section class="flex flex-col bg-white ml-64">
+        <div class="w-full xl:w-12/12 xl:mb-0 px-4 mx-auto mt-6">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
+                <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
+                    <div class="flex flex-wrap items-center">
+                        <div class="relative w-full max-w-full flex-grow flex-1">
+                            <p class="mb-1 text-xl font-bold" style="color: #1C1C1C;">Revenue</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 flex-auto">
+                    <!-- Chart -->
+                    <div class="relative h-350-px">
+                        <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                                <div class=""></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <canvas id="line-chart" style="display: block; height: 350px; width: 791px;" width="1582" height="700" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    var config = {
+        type: "line",
+        data: {
+            labels: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ],
+            datasets: [{
+                    label: new Date().getFullYear(),
+                    backgroundColor: "#A8C5DA",
+                    borderColor: "#A8C5DA",
+                    data: [65, 78, 66, 44, 56, 67, 75, 55, 82, 69, 42, 63],
+                    fill: false,
+                },
+                {
+                    label: new Date().getFullYear() - 1,
+                    fill: false,
+                    backgroundColor: "#1C1C1C",
+                    borderColor: "#1C1C1C",
+                    data: [40, 68, 86, 74, 56, 60, 87, 67, 52, 85, 60, 90],
+                },
+            ],
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            title: {
+                display: false,
+                text: "Sales Charts",
+                fontColor: "#1C1C1C66",
+            },
+            legend: {
+                labels: {
+                    fontColor: "#1C1C1C66",
+                },
+                align: "end",
+                position: "bottom",
+            },
+            tooltips: {
+                mode: "index",
+                intersect: false,
+            },
+            hover: {
+                mode: "nearest",
+                intersect: true,
+            },
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        fontColor: "#1C1C1C66",
+                    },
+                    display: true,
+                    scaleLabel: {
+                        display: false,
+                        labelString: "Month",
+                        fontColor: "1C1C1C66",
+                    },
+                    gridLines: {
+                        display: false,
+                        borderDash: [2],
+                        borderDashOffset: [2],
+                        color: "#1C1C1C66",
+                        zeroLineColor: "#1C1C1C66",
+                        zeroLineBorderDash: [2],
+                        zeroLineBorderDashOffset: [2],
+                    },
+                }, ],
+                yAxes: [{
+                    ticks: {
+                        fontColor: "#1C1C1C66",
+                    },
+                    display: true,
+                    scaleLabel: {
+                        display: false,
+                        labelString: "Value",
+                        fontColor: "#1C1C1C66",
+                    },
+                    gridLines: {
+                        borderDash: [3],
+                        borderDashOffset: [3],
+                        drawBorder: false,
+                        color: "#1C1C1C66",
+                        zeroLineColor: "#1C1C1C66",
+                        zeroLineBorderDash: [2],
+                        zeroLineBorderDashOffset: [2],
+                    },
+                }, ],
+            },
+        },
+    };
+    var ctx = document.getElementById("line-chart").getContext("2d");
+    window.myLine = new Chart(ctx, config);
+</script>
 
 </html>
