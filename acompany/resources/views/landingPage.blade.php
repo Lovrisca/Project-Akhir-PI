@@ -25,7 +25,7 @@
 
     <div class="flex flex-col ml-64 p-4">
         <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
-            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
+            <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E3F5FF;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Product</p>
                 </div>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
+            <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E5ECF6;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Profit</p>
                 </div>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
+            <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E3F5FF;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Stock</p>
                 </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
+            <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E5ECF6;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Customer</p>
                 </div>
