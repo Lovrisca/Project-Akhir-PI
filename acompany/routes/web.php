@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('profile');
+});
+Route::get('/l', function () {
     return view('landingPage');
 });
