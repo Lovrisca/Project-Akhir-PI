@@ -25,78 +25,55 @@
 
     <div class="flex flex-col ml-64 p-4">
         <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
-            <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
-                <div class="p-4 text-left">
-                    <p class="block antialiased font-sans leading-normal font-semibold text-blue-gray-600">Total Product</p>
-                    <p class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">721K</p>
-                    <p class="block antialiased font-sans leading-normal font-normal text-blue-gray-600">+11.01%</p>
+            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
+                <div class="px-4 p-3 text-left">
+                    <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Product</p>
+                </div>
+                <div class="px-4 p-2 text-left flex items-center justify-between">
+                    <div class="flex">
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">721K</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+11.01%</p>
+                    </div>
                 </div>
             </div>
-            <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
-                <div class="p-4 text-right">
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Today's Users</p>
-                    <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">2,300</h4>
+            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
+                <div class="px-4 p-3 text-left">
+                    <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Profit</p>
                 </div>
-                <div class="border-t border-blue-gray-50 p-4">
-                    <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                        <strong class="text-green-500">+3%</strong>&nbsp;than last month
-                    </p>
+                <div class="px-4 p-2 text-left flex items-center justify-between">
+                    <div class="flex">
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">367K</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">-0.03%</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="flex flex-col ml-64 p-4">
-            <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
-                <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
-                    <div class="px-4 p-3 text-left">
-                        <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Product</p>
+            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
+                <div class="px-4 p-3 text-left">
+                    <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Stock</p>
+                </div>
+                <div class="px-4 p-2 text-left flex items-center justify-between">
+                    <div class="flex">
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">1,156</p>
                     </div>
-                    <div class="px-4 p-2 text-left flex items-center justify-between">
-                        <div class="flex">
-                            <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">721K</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+11.01%</p>
-                        </div>
+                    <div class="flex items-center">
+                        <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
                     </div>
                 </div>
-                <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
-                    <div class="px-4 p-3 text-left">
-                        <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Profit</p>
-                    </div>
-                    <div class="px-4 p-2 text-left flex items-center justify-between">
-                        <div class="flex">
-                            <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">367K</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">-0.03%</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
+                <div class="px-4 p-3 text-left">
+                    <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Customer</p>
                 </div>
-                <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E3F5FF;">
-                    <div class="px-4 p-3 text-left">
-                        <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Stock</p>
+                <div class="px-4 p-2 text-left flex items-center justify-between">
+                    <div class="flex">
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">579</p>
                     </div>
-                    <div class="px-4 p-2 text-left flex items-center justify-between">
-                        <div class="flex">
-                            <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">1,156</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card relative flex flex-col bg-clip-border rounded-xl text-gray-700 shadow-md" style="background-color: #E5ECF6;">
-                    <div class="px-4 p-3 text-left">
-                        <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Customer</p>
-                    </div>
-                    <div class="px-4 p-2 text-left flex items-center justify-between">
-                        <div class="flex">
-                            <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">579</p>
-                        </div>
-                        <div class="flex items-center">
-                            <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
-                        </div>
+                    <div class="flex items-center">
+                        <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
                     </div>
                 </div>
             </div>
