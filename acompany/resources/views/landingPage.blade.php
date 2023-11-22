@@ -109,13 +109,14 @@
                 </ul>
             </div>
         </div>
-    </div>
 
-    <!--  -->
-    <div class="p-20">
-        <!-- Isi dari komponen di luar sidebar -->
-        <h1>Content di Luar Sidebar</h1>
-        <p>Isi dari komponen ini.</p>
+        <div class="flex flex-col ml-64 p-4">
+            <h1 class="text-2xl font-bold mb-4">Halo</h1>
+            <p>
+                Ini adalah konten utama Anda. Anda dapat menambahkan elemen-elemen HTML dan konten lainnya di sini.
+            </p>
+        </div>
+
     </div>
 </body>
 
