@@ -23,7 +23,7 @@
     <!-- SideBar -->
     @extends('component/sideBar')
 
-    <div class="flex flex-col ml-64 p-4">
+    <div class="flex flex-col ml-64 p-16">
         <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
             <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E3F5FF;">
                 <div class="px-4 p-3 text-left">
