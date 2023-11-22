@@ -111,10 +111,6 @@
         </div>
 
         <div class="flex flex-col ml-64 p-4">
-            <!-- <h1 class="text-2xl font-bold mb-4">Halo</h1>
-            <p>
-                Ini adalah konten utama Anda. Anda dapat menambahkan elemen-elemen HTML dan konten lainnya di sini.
-            </p> -->
             <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
                 <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
                     <div class="p-4 text-left">
@@ -160,6 +156,9 @@
                 </div>
             </div>
             <div class="p-4 xl:ml-80">
+            </p>
+            
+        </div>
 
             </div>
 </body>
