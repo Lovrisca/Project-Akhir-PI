@@ -85,7 +85,7 @@
     </div>
 
     <section class="flex flex-col bg-white ml-64">
-        <div class="w-full xl:w-12/12 xl:mb-0 px-4 mx-auto mt-6">
+        <div class="w-full xl:w-12/12 xl:mb-0 px-4 mx-auto">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
                 <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                     <div class="flex flex-wrap items-center">
