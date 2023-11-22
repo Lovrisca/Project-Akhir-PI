@@ -115,10 +115,8 @@
                 <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
                     <div class="p-4 text-left">
                         <p class="block antialiased font-sans leading-normal font-semibold text-blue-gray-600">Total Product</p>
-                        <p class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">
-                            <strong class="text-blue-gray-900">721K</strong>
-                            <p>+11.01%</p>
-                        </p>
+                        <p class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">721K</p>
+                        <p class="block antialiased font-sans leading-normal font-normal text-blue-gray-600">+11.01%</p>
                     </div>
                 </div>
                 <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
@@ -155,12 +153,8 @@
                     </div>
                 </div>
             </div>
-            <div class="p-4 xl:ml-80">
-            </p>
-            
         </div>
-
-            </div>
+    </div>
 </body>
 
 </html>
