@@ -5,4 +5,7 @@
 .card{
     height: 120px;
 }
+body{
+    overflow-x: hidden;
+}
 
