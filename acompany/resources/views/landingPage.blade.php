@@ -27,8 +27,9 @@
     <!-- SideBar -->
     @extends('component/sideBar')
 
-    <div class="flex flex-col ml-64 p-16">
-        <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
+    <!-- Card -->
+    <div class="flex flex-col ml-64 p-4">
+        <div class="grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
             <div class="card relative flex flex-col border-none rounded-xl text-gray-700" style="background-color: #E3F5FF;">
                 <div class="px-4 p-3 text-left">
                     <p class="block antialiased leading-normal font-semibold text-blue-gray-600">Total Product</p>
@@ -84,6 +85,7 @@
         </div>
     </div>
 
+    <!-- Line Charts -->
     <section class="flex flex-col bg-white ml-64">
         <div class="w-full xl:w-12/12 xl:mb-0 px-4 mx-auto">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
