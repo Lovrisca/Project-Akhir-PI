@@ -12,5 +12,10 @@
         "postcss": "^8.4.31",
         "tailwindcss": "^3.3.5",
         "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "chart": "^0.1.2",
+        "chart.js": "^4.4.0",
+        "js": "^0.1.0"
     }
 }

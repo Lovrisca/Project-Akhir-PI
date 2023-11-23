@@ -25,3 +25,6 @@ Route::get('/c', function () {
 
 // Route::get('sales', [SalesContoller, 'index']);
 
+Route::get('/s', function () {
+    return view('sales');
+});
