@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('employee_account', function(Blueprint $table){
             $table->id('employee_id');
-            $table->string('nip')->unique();
             $table->string('email');
             $table->string('password');
             $table->timestamps();
