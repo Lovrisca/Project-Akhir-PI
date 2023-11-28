@@ -28,3 +28,7 @@ Route::get('/c', function () {
 Route::get('/s', function () {
     return view('sales');
 });
+
+Route::get('/p', function () {
+    return view('products');
+});
