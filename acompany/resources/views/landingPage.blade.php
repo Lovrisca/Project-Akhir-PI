@@ -23,7 +23,7 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
 </head>
 
-<body style="font-family: 'Maven Pro';">
+<body style="font-family: 'Maven Pro';" id="dashboard">
     <!-- SideBar -->
     @extends('component/sideBar')
 
@@ -87,14 +87,14 @@
 
     <div class="row ml-60 px-4">
         <div class="col-6">
-            <!-- Sales Chart -->
+            <!-- Product Sales Chart -->
             <section class="flex flex-col bg-white">
                 <div class="xl:w-12/12">
                     <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
                         <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
-                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales</p>
+                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Product Sales</p>
                                 </div>
                             </div>
                         </div>
@@ -117,14 +117,14 @@
             </section>
         </div>
         <div class="col-6">
-            <!-- Revenue Chart -->
+            <!-- Profit Chart -->
             <section class="flex flex-col bg-white">
                 <div class="xl:w-12/12">
                     <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
                         <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
-                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales</p>
+                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales Profit</p>
                                 </div>
                             </div>
                         </div>
@@ -155,18 +155,18 @@
         type: "line",
         data: {
             labels: [
-                "January",
-                "February",
-                "March",
-                "April",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
                 "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sept",
+                "Oct",
+                "Nov",
+                "Dec"
             ],
             datasets: [{
                     label: new Date().getFullYear(),
@@ -260,18 +260,18 @@
         type: "line",
         data: {
             labels: [
-                "January",
-                "February",
-                "March",
-                "April",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
                 "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sept",
+                "Oct",
+                "Nov",
+                "Dec"
             ],
             datasets: [{
                     label: new Date().getFullYear(),
@@ -359,5 +359,4 @@
     var ctx = document.getElementById("revenue-chart").getContext("2d");
     window.myLine = new Chart(ctx, config);
 </script>
-
 </html>
