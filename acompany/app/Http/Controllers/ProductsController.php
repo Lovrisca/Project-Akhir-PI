@@ -10,12 +10,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 
-class CustomersController extends Controller
+class ProductsController extends Controller
 {
-    public function index()
-    {
-        $response = Http::get('https://api.aibm.my.id/customers');
-        $customer = $response['data']['customers'];
-        return view('customer', ['customers' => $customer]);
+    public function index() {
+        $response = Http::get('https://api.aibm.my.id/products');
+        $product = $response['data']['products'];
+        return view('products', ['products' => $product]);
     }
 }
