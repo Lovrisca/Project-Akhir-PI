@@ -73,7 +73,7 @@
                   {{ date('d M Y', strtotime($sale['invoice_date'])) }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                  {{ $sale['name_product'] }}
+                  {{ $sale['product']['name_product'] }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                   {{ $sale['total_volume'] }}

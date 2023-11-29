@@ -36,7 +36,9 @@
                 </div>
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
-                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">721</p>
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
+                            {{ $totalProducts }}
+                        </p>
                     </div>
                     <div class="flex items-center">
                         <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+11.01%</p>
@@ -49,7 +51,9 @@
                 </div>
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
-                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">367K</p>
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
+                            ...
+                        </p>
                     </div>
                     <div class="flex items-center">
                         <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">-0.03%</p>
@@ -62,7 +66,9 @@
                 </div>
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
-                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">1,156</p>
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
+                            {{ $totalStocks }}
+                        </p>
                     </div>
                     <div class="flex items-center">
                         <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
@@ -76,7 +82,7 @@
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
                         <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
-                            ..
+                            {{ $totalCustomers }}
                         </p>
                     </div>
                     <div class="flex items-center">
@@ -361,4 +367,5 @@
     var ctx = document.getElementById("revenue-chart").getContext("2d");
     window.myLine = new Chart(ctx, config);
 </script>
+
 </html>
