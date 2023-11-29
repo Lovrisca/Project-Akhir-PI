@@ -27,7 +27,7 @@
       <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
         <div class="overflow-hidden">
           <table class="min-w-full">
-            <thead class="bg-white border-b">
+            <thead class="bg-gray-100 border-b">
               <tr>
                 <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                   No
@@ -55,7 +55,7 @@
             </thead>
             <tbody>
               @foreach ($products as $index => $product)
-              <tr class="bg-gray-100 border-b">
+              <tr class="bg-white-100 border-b">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {{ $index + 1 }}
                 </td>
