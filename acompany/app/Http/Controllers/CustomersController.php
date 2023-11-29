@@ -15,6 +15,6 @@ class CustomersController extends Controller
     public function index() {
         $response = Http::get('https://api.aibm.my.id/customers');
         $customer = $response['data']['customers'];
-        return view('sales', ['customers' => $customer]);
+        return view('customer', ['customers' => $customer]);
     }
 }

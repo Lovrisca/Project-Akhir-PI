@@ -54,7 +54,14 @@
               @php
               $totalIncome = 0;
               @endphp
+
               @foreach ($sales as $index => $sale)
+
+              @php
+              $totalPrice = $sale['total_volume'] * $sale['unit_price'];
+              $totalIncome += $totalPrice;
+              @endphp
+
               <tr class="bg-gray-100 border-b">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {{ $index + 1 }}
@@ -75,13 +82,9 @@
                   Rp {{ number_format($sale['unit_price'], 2, ',', '.') }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                  Rp {{ number_format($sale['total_price'], 2, ',', '.') }}
+                  Rp {{ number_format($totalPrice, 2, ',', '.') }}
                 </td>
               </tr>
-
-              @php
-              $totalIncome += $sale['total_price'];
-              @endphp
 
               <tr class="bg-white-100 border-b">
                 <td colspan="3" class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center">

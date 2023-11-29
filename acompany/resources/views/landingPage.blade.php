@@ -75,7 +75,9 @@
                 </div>
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
-                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">579</p>
+                        <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
+                            ..
+                        </p>
                     </div>
                     <div class="flex items-center">
                         <p class="block antialiased leading-normal font-normal text-blue-gray-600" style="text-size-adjust: 10px;">+15.03%</p>
