@@ -87,7 +87,7 @@
 
     <div class="row ml-60 px-4">
         <div class="col-6">
-            <!-- Sales Chart -->
+            <!-- Product Sales Chart -->
             <section class="flex flex-col bg-white">
                 <div class="xl:w-12/12">
                     <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
@@ -117,7 +117,7 @@
             </section>
         </div>
         <div class="col-6">
-            <!-- Revenue Chart -->
+            <!-- Profit Chart -->
             <section class="flex flex-col bg-white">
                 <div class="xl:w-12/12">
                     <div class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded-lg" style="background-color: #F7F9FB;">
