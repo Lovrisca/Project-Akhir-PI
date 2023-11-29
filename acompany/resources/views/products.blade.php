@@ -75,7 +75,7 @@
                   {{ $product['total_price'] }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                  {{ $product['last_update'] }}
+                  {{ date('Y-m-d', strtotime($product['last_update'])) }}
                 </td>
               </tr>
               @endforeach
