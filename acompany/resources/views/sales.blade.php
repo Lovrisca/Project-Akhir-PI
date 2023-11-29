@@ -25,7 +25,7 @@
       <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
         <div class="overflow-hidden">
           <table class="min-w-full">
-            <thead class="bg-white border-b">
+            <thead class="bg-gray-100 border-b">
               <tr>
                 <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                   No
@@ -62,7 +62,7 @@
               $totalIncome += $totalPrice;
               @endphp
 
-              <tr class="bg-gray-100 border-b">
+              <tr class="bg-white-100 border-b">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   {{ $index + 1 }}
                 </td>
@@ -86,11 +86,11 @@
                 </td>
               </tr>
 
-              <tr class="bg-white-100 border-b">
-                <td colspan="3" class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center">
+              <tr class="bg-gray-100 border-b">
+                <td colspan="6" class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-left">
                   Total Income
                 </td>
-                <td colspan="3" class="text-sm text-gray-900 bg-white-100 font-light px-6 py-4 whitespace-nowrap text-center">
+                <td colspan="6" class="text-sm text-gray-900 bg-white-100 font-light px-6 py-4 whitespace-nowrap text-center">
                   Rp {{ number_format($totalIncome, 2, ',', '.') }}
                 </td>
               </tr>
