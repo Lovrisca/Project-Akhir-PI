@@ -44,63 +44,21 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-gray-100 border-b">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Mark
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Otto
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      @mdo
-                    </td>
-                  </tr>
-                  <tr class="bg-white border-b">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Jacob
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Dillan
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      @fat
-                    </td>
-                  </tr>
-                  <tr class="bg-gray-100 border-b">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Mark
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Twen
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      @twitter
-                    </td>
-                  </tr>    
-                  <tr class="bg-white border-b">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4</td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Bob
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      Dillan
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      @fat
-                    </td>
-                  </tr>
-                  <tr class="bg-gray-100 border-b">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">5</td>
-                    <td colspan="2" class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center">
-                      Larry the Bird
-                    </td>
-                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      @twitter
-                    </td>
-                  </tr>
+                @foreach ($customers as $index => $customer)
+              <tr class="bg-gray-100 border-b">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  {{ $index + 1 }}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{ $customer['customer_id'] }}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{ $customer['name_customer'] }}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{ $customer['no_hp'] }}
+                </td>
+                  @endforeach
                 </tbody>
               </table>
             </div>

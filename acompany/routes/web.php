@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\SalesController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,15 +17,12 @@ use Illuminate\Support\Facades\Route;
 //Route Fix Jangan dirubah ya ges yak - caca
 Route::get('sales', [SalesController::class, 'index'])->name('sales');
 Route::get('products', [ProductsController::class, 'index'])->name('products');
+Route::get('customers', [CustomersController::class, 'index'])->name('customers');
 
 //Yang ini boleh dirubah
 Route::get('/', function () {
     return view('landingPage');
 })->name('landingPage');
-
-Route::get('/customer', function () {
-    return view('customer');
-})->name('customer');
 
 Route::get('/profile', function () {
     return view('profile');
