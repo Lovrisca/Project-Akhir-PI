@@ -23,7 +23,7 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
 </head>
 
-<body style="font-family: 'Maven Pro';">
+<body style="font-family: 'Maven Pro';" id="dashboard">
     <!-- SideBar -->
     @extends('component/sideBar')
 
@@ -94,7 +94,7 @@
                         <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
-                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales</p>
+                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Product Sales</p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                         <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
-                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales</p>
+                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Sales Profit</p>
                                 </div>
                             </div>
                         </div>
