@@ -155,18 +155,18 @@
         type: "line",
         data: {
             labels: [
-                "January",
-                "February",
-                "March",
-                "April",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
                 "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sept",
+                "Oct",
+                "Nov",
+                "Dec"
             ],
             datasets: [{
                     label: new Date().getFullYear(),
@@ -260,18 +260,18 @@
         type: "line",
         data: {
             labels: [
-                "January",
-                "February",
-                "March",
-                "April",
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
                 "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sept",
+                "Oct",
+                "Nov",
+                "Dec"
             ],
             datasets: [{
                     label: new Date().getFullYear(),
@@ -359,5 +359,4 @@
     var ctx = document.getElementById("revenue-chart").getContext("2d");
     window.myLine = new Chart(ctx, config);
 </script>
-
 </html>
