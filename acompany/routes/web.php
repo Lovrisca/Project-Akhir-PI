@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Route Fix Jangan dirubah ya ges yak - caca
-Route::get('sales', [SalesController::class, 'index']);
+Route::get('sales', [SalesController::class, 'index'])->name('sales');
 
 //Yang ini boleh dirubah
 Route::get('/', function () {

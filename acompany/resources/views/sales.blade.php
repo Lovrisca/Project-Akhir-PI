@@ -17,7 +17,7 @@
   @vite('resources/css/css/customer.css')
 </head>
 
-<body style="font-family: 'Maven Pro';">
+<body style="font-family: 'Maven Pro';" id="sales">
   <!-- SideBar -->
   @extends('component/sideBar')
   <div class="flex flex-col ml-64 p-4">
