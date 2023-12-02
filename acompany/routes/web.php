@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('sales', [SalesController::class, 'index'])->name('sales');
 Route::get('products', [ProductsController::class, 'index'])->name('products');
 Route::get('customers', [CustomersController::class, 'index'])->name('customers');
-Route::get('landingPage', [LandingPageController::class, 'index'])->name('landingPage');
+Route::get('/', [LandingPageController::class, 'index'])->name('landingPage');
 
 //Yang ini boleh dirubah
 Route::get('/profile', function () {
