@@ -45,7 +45,7 @@
                   Unit Price
                 </th>
                 <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                  Total Price
+                  Product Cost
                 </th>
                 <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                   Last Update
@@ -69,10 +69,10 @@
                   {{ $product['stock'] }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                  {{ $product['unit_price'] }}
+                  Rp {{ number_format($product['unit_price'], 2, ',', '.') }}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                  {{ $product['total_price'] }}
+                  Rp {{ number_format($product['product_cost'], 2, ',', '.' )}}
                 </td>
                 <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                   {{ date('Y-m-d', strtotime($product['last_update'])) }}

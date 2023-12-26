@@ -52,7 +52,7 @@
                 <div class="px-4 p-2 text-left flex items-center justify-between">
                     <div class="flex">
                         <p class="block antialiased tracking-normal text-2xl font-bold leading-snug text-blue-gray-900">
-                            ...
+                            {{ $totalProfit }}
                         </p>
                     </div>
                     <div class="flex items-center">
@@ -102,7 +102,7 @@
                         <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
                             <div class="flex flex-wrap items-center">
                                 <div class="relative w-full max-w-full flex-grow flex-1">
-                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Product Sales</p>
+                                    <p class="mb-1 text-xl font-semibold" style="color: #1C1C1C;">Product Stock</p>
                                 </div>
                             </div>
                         </div>
@@ -162,25 +162,12 @@
     var config = {
         type: "line",
         data: {
-            labels: [
-                "Jan",
-                "Feb",
-                "Mar",
-                "Apr",
-                "May",
-                "Jun",
-                "Jul",
-                "Aug",
-                "Sept",
-                "Oct",
-                "Nov",
-                "Dec"
-            ],
+            labels: <?php echo json_encode($monthLabels); ?>,
             datasets: [{
                     label: new Date().getFullYear(),
                     backgroundColor: "#A8C5DA",
                     borderColor: "#A8C5DA",
-                    data: [65, 78, 66, 44, 56, 67, 75, 55, 82, 69, 42, 63],
+                    data: <?php echo json_encode($productData); ?>,
                     fill: false,
                 },
                 {
